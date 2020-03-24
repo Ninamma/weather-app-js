@@ -4,20 +4,24 @@ This will hopefully grow to be an app for people to quickly find out if they nee
 
 Initially tried using ClojureScript & Clojure, but struggled with new languages and new concepts at the same time, so decided to start again with JS instead.
 
-## Make It Do
+The app uses the [Dark Sky API](https://darksky.net/dev) so if you'd like to try it out, you'll need to grab a free API key from there!
+
+## How to use
 So to find out how today's weather will compare to yesterday's, you basically just need to:
+#### Use your API key
+In the server directory, create a `.env` file, inside that you just need to put "`DARKSKY_API_KEY=API_KEY_GOES_HERE`"
 
 #### Start the client
-From the root directory:
+In the client directory:
 ```
-cd client
+npm install
 npm start
 ```
 
-### Start the server.
-Again from the root directory:
+#### Start the server
+In the server directory:
 ```
-cd server
+npm install
 npm start
 ```
 
