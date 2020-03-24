@@ -5,7 +5,7 @@ function App() {
   const [apiResponse, setApiResponse] = useState("");
 
   function callAPI() {
-    fetch("http://localhost:9000/testServer")
+    fetch("http://localhost:9000/compare")
     .then(res => res.text())
     .then(res => setApiResponse(res))
   }
@@ -15,10 +15,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>
-          Welcome to the soon-to-be weather app! <span role="img" aria-label="sun behind rain cloud">🌦</span>
+        {apiResponse}
         </h1>
       </header>
-      <p className="App-intro">{apiResponse}</p>
     </div>
   );
 }
