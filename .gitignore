@@ -3,3 +3,10 @@ node_modules/
 
 # Environment variables
 .env
+
+# Local .terraform directories
+**/.terraform/*
+
+# .tfstate files
+*.tfstate
+*.tfstate.*
